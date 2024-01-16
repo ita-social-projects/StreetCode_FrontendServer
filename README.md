@@ -23,7 +23,6 @@ Front-end part: https://github.com/ita-social-projects/StreetCode_Client.git <br
     - [How to run local](#how-to-run-local)
 - [Usage](#usage)
     - [How to run tests](#how-to-run-tests)
-- [Documentation](#documentation)
 - [Support](#support)
 - [About Us](#about-us)
 - [License](#license)
@@ -73,12 +72,6 @@ To run tests with coverage write following command:
 ```
 npm test:cov
 ```
-
----
-
-## Documentation
-Learn more about our documentation <a href="https://github.com/ita-social-projects/StreetCode_Client/wiki" target="_blank">*here*</a>.
-
 ---
 
 ## Support
