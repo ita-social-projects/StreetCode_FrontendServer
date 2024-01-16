@@ -1,14 +1,14 @@
 {
-  "name": "server",
+  "name": "streetcode client server",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "SoftServe IT Academy (https://career.softserveinc.com/uk-ua/)",
   "private": true,
   "engines": {
     "node": ">=16",
     "npm": ">=7"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
