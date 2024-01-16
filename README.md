@@ -10,7 +10,7 @@
 This is a front-end server part of our Streetcode project.<br />
 Back-end part: https://github.com/ita-social-projects/StreetCode.git <br />
 Front-end part: https://github.com/ita-social-projects/StreetCode_Client.git <br />
-[![Build Status](https://img.shields.io/travis/ita-social-projects/StreetCode/master?style=flat-square)](https://travis-ci.org/github/ita-social-projects/StreetCode) [![Coverage Status](https://img.shields.io/gitlab/coverage/ita-social-projects/StreetCode/master?style=flat-square)](https://coveralls.io) [![Github Issues](https://img.shields.io/github/issues/ita-social-projects/StreetCode?style=flat-square)](https://github.com/ita-social-projects/StreetCode/issues) [![Pending Pull-Requests](https://img.shields.io/github/issues-pr/ita-social-projects/StreetCode?style=flat-square)](https://github.com/ita-social-projects/StreetCode/pulls) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![Github Issues](https://img.shields.io/github/issues/ita-social-projects/StreetCode?style=flat-square)](https://github.com/ita-social-projects/StreetCode/issues) [![Pending Pull-Requests](https://img.shields.io/github/issues-pr/ita-social-projects/StreetCode_FrontendServer?style=flat-square)](https://github.com/ita-social-projects/StreetCode_FrontendServer/pulls) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 ---
 
