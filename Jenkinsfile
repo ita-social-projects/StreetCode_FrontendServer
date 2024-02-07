@@ -12,14 +12,6 @@ pipeline {
                 }
             }
         }
-        stage('Docker prune') {
-            steps {
-                script {
-                    sh 'docker image prune --force --all --filter "until=72h"'
-                    sh 'docker system prune --force --all --filter "until=72h"'
-                }
-            }
-        }
         stage('Docker push') {
             steps {
                 script {
