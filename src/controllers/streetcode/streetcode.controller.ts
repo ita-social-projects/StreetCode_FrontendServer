@@ -9,6 +9,7 @@ import URLS_TO_OMIT from './constants/urlsToOmit.constant';
 import { StreetcodeCache } from '../../interfaces/StreetcodeCache';
 import { Streetcode } from '../../interfaces/Streetcode';
 import STREETCODE_CONSOLE_MESSAGES from './constants/console.constant';
+import { IPageMetadata } from 'src/shared/get-app-service/constants/defaultMeta.constant';
 
 @Controller()
 export class StreetcodeController {
@@ -46,7 +47,7 @@ export class StreetcodeController {
     const id = this.streetcodeCacheUrlsMap.get(url);
     const streetcode = this.streetcodeCacheMap.get(id);
 
-    const meta = {
+    const meta: IPageMetadata = {
       title: streetcode.title,
       image: base64ToUrl(streetcode.image.base64, streetcode.image.mimeType),
     };

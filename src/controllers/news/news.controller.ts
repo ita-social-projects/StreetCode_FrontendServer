@@ -4,6 +4,7 @@ import News from '../../interfaces/News';
 import { GetAppService } from '../../shared/get-app-service/get-app.service';
 import base64ToUrl from '../../shared/utils/base64ToUrl';
 import NEWS_CONSOLE_MESSAGES from './constants/console.constant';
+import { IPageMetadata } from 'src/shared/get-app-service/constants/defaultMeta.constant';
 
 @Controller()
 export class NewsController {
@@ -40,7 +41,7 @@ export class NewsController {
       image: { base64, mimeType },
     } = theNews;
 
-    const meta = {
+    const meta: IPageMetadata = {
       description: title,
       image: base64ToUrl(base64, mimeType),
     };
