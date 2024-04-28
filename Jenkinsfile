@@ -3,9 +3,13 @@ def CODE_VERSION = ''
 def IS_IMAGE_BUILDED = false
 def isSuccess
 def vers
+def SEM_VERSION = ''
 pipeline {
     agent { 
         label 'stage' 
+    }
+    environment {
+        GITHUB_TOKEN = credentials('GH_TOKEN')     
     }
     options {
             skipDefaultCheckout true
@@ -93,7 +97,24 @@ pipeline {
                 }
             }
         }
-    
+    stage('Merge release') {
+            when {
+                expression { IS_IMAGE_PUSH == true }
+            }   
+             steps {
+            input message: 'Do you want to merge release branch ?', ok: 'Yes', submitter: 'admin_1, ira_zavushchak , dev'
+                script {
+                        sh 'echo ${BRANCH_NAME}'
+                        sh "git checkout master" 
+                        sh 'echo ${BRANCH_NAME}'
+                        sh "git merge release/${env.SEM_VERSION}" 
+                        sh "npm version ${env.CODE_VERSION} -m 'Upgrade to %s as part of release'"
+        
+                        sh "git push origin main"                     
+
+                }  
+            }
+        }
     
 
     }   
