@@ -92,3 +92,5 @@ Visit our <a href="https://streetcode.com.ua" target="_blank">*site*</a>, we wil
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2024 © <a href="https://softserve.academy/" target="_blank"> SoftServe IT Academy</a>.
+
+
