@@ -13,6 +13,7 @@ import { GetAppService } from './shared/get-app-service/get-app.service';
 import { NewsService } from './controllers/news/news.service';
 import { StreetcodeService } from './controllers/streetcode/streetcode.service';
 import { ClientController } from './controllers/client/client.controller';
+import { AdminNoIndexMiddleware } from './shared/admin-noindex-middleware/admin-noindex.middleware';
 
 @Module({
   imports: [
@@ -29,5 +30,6 @@ export class AppModule implements NestModule {
     consumer
       .apply(FileMiddleware)
       .forRoutes({ path: '*', method: RequestMethod.ALL });
+    consumer.apply(AdminNoIndexMiddleware).forRoutes('admin-panel*');
   }
 }
