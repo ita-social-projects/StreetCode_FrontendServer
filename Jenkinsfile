@@ -1,6 +1,7 @@
 
 def CODE_VERSION = ''     
 def IS_IMAGE_BUILDED = false
+def IS_IMAGE_PUSH = false
 def isSuccess
 def vers
 def SEM_VERSION = ''
